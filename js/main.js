@@ -146,3 +146,43 @@ const cantidadEnCarrito = () => {
 };
 
 cantidadEnCarrito();
+
+// FETCH //
+
+const oficial = async () => {
+    const respuestaOficial = await fetch("https://dolarapi.com/v1/dolares/oficial");
+    const oficialData = await respuestaOficial.json();
+    console.log(oficialData);
+
+    let dolarOficial = document.querySelector("#dolarOficial")
+
+    const contenidoOficial = document.createElement("div");
+    contenidoOficial.innerHTML = `
+            <h2>Dolar oficial</h2>
+            <b>Compra: ${oficialData.compra} $</b>
+            <b>Venta: ${oficialData.venta} $</b>
+            <p>Fecha de actualizacion: ${oficialData.fechaActualizacion}</p>
+            `;
+    dolarOficial.append(contenidoOficial);
+};
+
+oficial();
+
+const blue = async () => {
+    const respuestaBlue = await fetch("https://dolarapi.com/v1/dolares/blue");
+    const blueData = await respuestaBlue.json();
+    console.log(blueData);
+
+    let dolarBlue = document.querySelector("#dolarBlue")
+
+    const contenidoBlue = document.createElement("div");
+    contenidoBlue.innerHTML = `
+            <h2>Dolar oficial</h2>
+            <b>Compra: ${blueData.compra} $</b>
+            <b>Venta: ${blueData.venta} $</b>
+            <p>Fecha de actualizacion: ${blueData.fechaActualizacion}</p>
+            `;
+    dolarBlue.append(contenidoBlue);
+};
+
+blue();

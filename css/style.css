@@ -63,9 +63,54 @@ nav ul li p:hover {
   width: 100px;
 }
 
-.carritoCompras {
-  padding: 1px;
-  cursor: pointer;
+.cotizacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  height: 300px;
+  width: auto;
+}
+
+.dolar-oficial div {
+  border-radius: 32px;
+  background-color: #b08e6b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+  gap: 15px;
+  height: 200px;
+  width: 400px;
+}
+
+.atencion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+  gap: 15px;
+  height: 200px;
+  width: 400px;
+}
+
+.dolar-blue div {
+  border-radius: 32px;
+  background-color: #b08e6b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+  gap: 15px;
+  height: 200px;
+  width: 400px;
 }
 
 .carritoCompras img {
