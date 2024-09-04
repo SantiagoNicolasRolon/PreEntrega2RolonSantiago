@@ -115,21 +115,20 @@ const mostrarCarrito = () => {
         borrar.addEventListener("click", () => {
             borrarProd(Carro.id)
         });
+    });
+    const total = carrito.reduce((A, E) => A + E.precio * E.stock, 0);
+    const totalApagar = document.createElement("div");
+    totalApagar.className = "totalApagar";
+    totalApagar.innerHTML = `
+        <p>Total a pagar:</p><p>${total} $</p>
+        <button>Comprar</button>`;
+    contenedorCarrito.append(totalApagar);
 
-        const total = carrito.reduce((A, E) => A + E.precio * E.stock, 0);
-        const totalApagar = document.createElement("div");
-        totalApagar.className = "totalApagar";
-        totalApagar.innerHTML = `
-            <p>Total a pagar:</p><p>${total} $</p>
-            <button>Comprar</button>`;
-        contenedorCarrito.append(totalApagar);
-
-        totalApagar.querySelector('button').addEventListener('click', () => {
-            Swal.fire({
-                title: "¡Genial!",
-                text: "La compra se realizó con exito",
-                icon: "success"
-            });
+    totalApagar.querySelector('button').addEventListener('click', () => {
+        Swal.fire({
+            title: "¡Genial!",
+            text: "La compra se realizó con exito",
+            icon: "success"
         });
     });
 };
