@@ -74,8 +74,10 @@ nav ul li p:hover {
 }
 
 .dolar-oficial div {
+  border: solid 1px;
+  border-color: #b08e6b;
   border-radius: 32px;
-  background-color: #b08e6b;
+  background-color: #f5e1ce;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +87,7 @@ nav ul li p:hover {
   gap: 15px;
   height: 200px;
   width: 400px;
+  box-shadow: 8px 8px 10px #b08e6b;
 }
 
 .atencion {
@@ -100,8 +103,10 @@ nav ul li p:hover {
 }
 
 .dolar-blue div {
+  border: solid 1px;
+  border-color: #b08e6b;
   border-radius: 32px;
-  background-color: #b08e6b;
+  background-color: #f5e1ce;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,11 +116,12 @@ nav ul li p:hover {
   gap: 15px;
   height: 200px;
   width: 400px;
+  box-shadow: 8px 8px 10px #b08e6b;
 }
 
 .carritoCompras img {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
   border: solid 1px;
   border-color: black;
@@ -124,8 +130,9 @@ nav ul li p:hover {
 }
 
 .carritoCompras img:hover {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
 }
 
 .carritocaja {
@@ -144,6 +151,7 @@ nav ul li p:hover {
   justify-content: center;
   align-content: space-evenly;
   gap: 10px;
+  box-shadow: 8px 8px 10px rgb(63, 16, 16);
 }
 
 .carrito-header {
@@ -184,6 +192,8 @@ nav ul li p:hover {
   border-radius: 16px;
   height: 100px;
   width: 100px;
+  border: solid 1px;
+  color: black;
 }
 
 .totalApagar {
@@ -191,7 +201,23 @@ nav ul li p:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
+}
+
+.totalApagar button {
+  padding: 10px 30px 10px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.totalApagar button:hover {
+  background-color: brown;
 }
 
 .conteo-carrito {
