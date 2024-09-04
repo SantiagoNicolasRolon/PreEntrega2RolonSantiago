@@ -177,7 +177,7 @@ const blue = async () => {
 
     const contenidoBlue = document.createElement("div");
     contenidoBlue.innerHTML = `
-            <h2>Dolar oficial</h2>
+            <h2>Dolar blue</h2>
             <b>Compra: ${blueData.compra} $</b>
             <b>Venta: ${blueData.venta} $</b>
             <p>Fecha de actualizacion: ${blueData.fechaActualizacion}</p>
