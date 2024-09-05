@@ -125,11 +125,19 @@ const mostrarCarrito = () => {
     contenedorCarrito.append(totalApagar);
 
     totalApagar.querySelector('button').addEventListener('click', () => {
-        Swal.fire({
-            title: "¡Genial!",
-            text: "La compra se realizó con exito",
-            icon: "success"
-        });
+        if (total == 0) {
+            Swal.fire({
+                title: "Error",
+                text: "Por favor agregue al menos un producto al carrito de compras",
+                icon: "error"
+            });
+        } else {
+            Swal.fire({
+                title: "¡Genial!",
+                text: "La compra se realizó con exito",
+                icon: "success"
+            });
+        };
     });
 };
 
